@@ -30,4 +30,5 @@ class DBUtils:
         self.__conn.commit()
 
     def close(self):
+        self.__cursor.close()
         self.__conn.close()
